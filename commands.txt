@@ -1,0 +1,9 @@
+Setup:
+
+npm install tailwindcss --save
+npx tailwindcss init
+npm install --save @fortawesome/fontawesome-free
+
+Compiling css:
+
+npx tailwindcss build index.css -o styles.css

@@ -1,0 +1,11 @@
+@tailwind base;
+
+/* add custom base styles and font-faces here */
+
+@tailwind components;
+
+/* extract custom components here */
+
+@tailwind utilities;
+
+/* add custom utilities here */

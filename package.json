@@ -1,0 +1,16 @@
+{
+  "name": "frontend_examples",
+  "version": "1.0.0",
+  "description": "Website examples using tailwind and fontawesome",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "tailwindcss": "^1.4.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Fraser-Jones",
+  "license": "ISC"
+}
