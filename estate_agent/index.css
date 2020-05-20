@@ -13,6 +13,22 @@
     @apply absolute object-cover object-center min-h-full min-w-full;
 }
 
+.line-break {
+    @apply mx-auto my-2;
+    height: 8px;
+    width: 80px;
+}
+
+@font-face {
+    font-family: Soleil;
+    src: url(../content/Soleil\ W01\ Regular.woff);
+}
+
+@font-face {
+    font-family: LeMondLivre;
+    src: url(../content/LeMondeLivre\ Normal.woff);
+}
+
 @tailwind components;
 
 /* extract custom components here */

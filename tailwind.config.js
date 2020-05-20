@@ -1,7 +1,19 @@
 module.exports = {
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        soleil: ['Soleil'
+                , 'sans-serif'
+                ]
+      , lemondlivre: ['LeMondLivre'
+                     , 'serif'
+                     ]
+      }
+    , colors: {
+        primary: '#e00b2f'
+      }
+    },
   },
   variants: {},
   plugins: [],

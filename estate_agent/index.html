@@ -9,52 +9,53 @@
     <title>Estate Agent</title>
 </head>
 
-<body>
-    <div class="relative"> <!-- Video background example -->
+<body class="font-soleil text-white">
+    <div class="relative">
         <video autoplay muted loop playsinline class="background-video">
             <source src="../content/forest.mp4" type="video/mp4">
         </video>
-        <div class="relative text-white h-screen">
-            <p>Hello there, welcome to my forest!</p>
-        </div>
+        <section class="relative text-center"> <!-- main section -->
+            <nav class="px-4 pt-4 pb-6 flex justify-between align-center">
+                <div class="text-3xl">
+                    <i class="fas fa-crow"></i> <!-- logo -->
+                </div> 
+                <div class="self-center text-primary mr-2">
+                    <i class="fas fa-bars"></i> <!-- hamburger -->
+                </div> 
+            </nav> <!-- navbar -->
+            <div class="p-4"> <!-- main content -->
+                <div class="mt-6"> <!-- welcome messages -->
+                    <div> <!-- message 1 -->
+                        <p class="uppercase text-xs">Welcome to</p>
+                        <p class="font-lemondlivre text-3xl">James Fraser-Jones Mansions</p>
+                    </div>
+                    <div class="hidden"> <!-- message 2 -->
+                        <p>Reserved and mysterious</p>
+                        <p>Buy your adventure today</p>
+                    </div>
+                    <div class="hidden"> <!-- message 3 -->
+                        <p>Lightly fruity</p>
+                        <p>Very high in potassium</p>
+                    </div>
+                </div>
+                <div class="line-break"> <!-- line seperator -->
+                    <img src="../content/LineBreak.svg" width="80" height="8"> 
+                </div> 
+                <div class="mt-6 text-lg p-2"> <!-- company description -->
+                    <p>We warmly welcome you to our biannual celebration of the arctic landscape!</p>
+                </div>
+                <div class="flex flex-wrap justify-center mt-6"> <!-- link button group -->
+                    <a class="mx-2 mb-2 bg-primary py-3 px-6 rounded">
+                        <b>View</b> all <b>mansions</b>
+                        <i class="fas fa-angle-right ml-2"></i>
+                    </a>
+                    <a class="mx-2 mb-2 py-3 px-6 rounded-full border-2 border-solid border-white">
+                        <b>Explore</b> the <b>arctic</b>
+                    </a>
+                </div>
+            </div>
+        </section>
     </div>
-    
-    <section> <!-- main section -->
-        <nav>
-            <div>
-                <i class="fas fa-crow"></i> <!-- logo -->
-            </div> 
-            <div>
-                <i class="fas fa-bars"></i> <!-- hamburger -->
-            </div> 
-        </nav> <!-- navbar -->
-        <div> <!-- main content -->
-            <div> <!-- welcome messages -->
-                <div> <!-- message 1 -->
-                    <p>Welcome to</p>
-                    <p>James Fraser-Jones mansions</p>
-                </div>
-                <div> <!-- message 2 -->
-                    <p>Reserved and mysterious</p>
-                    <p>Buy your adventure today</p>
-                </div>
-                <div> <!-- message 3 -->
-                    <p>Lightly fruity</p>
-                    <p>Very high in potassium</p>
-                </div>
-            </div>
-            <div>
-                <i class="fas fa-grip-lines"></i> <!-- line seperator -->
-            </div> 
-            <div> <!-- company description -->
-                <p>We warmly welcome you to our biannual celebration of the arctic landscape!</p>
-            </div>
-            <div> <!-- link button group -->
-                <a>View all mansions</a>
-                <a>Explore the arctic</a>
-            </div>
-        </div>
-    </section>
 
     <section> <!-- mansions section -->
         <div> <!-- mansions -->
@@ -106,8 +107,8 @@
             <header>
                 <p>Explore</p>
                 <p>Birmingham</p>
-                <div>
-                    <i class="fas fa-grip-lines"></i> <!-- line seperator -->
+                <div> <!-- line seperator -->
+                    <img src="../content/LineBreak.svg" width="80" height="8"> 
                 </div> 
             </header>
             <ul>
@@ -154,7 +155,7 @@
     </section>
     
     <footer> <!-- footer -->
-
+        <div>Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed by CC BY 3.0</div>
     </footer>
 
     <script src="index.js"></script>
