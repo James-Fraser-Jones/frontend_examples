@@ -12,6 +12,7 @@ module.exports = {
       }
     , colors: {
         primary: '#e00b2f'
+      , tbeige: '#eae8e3'
       }
     },
   },

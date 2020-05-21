@@ -1,6 +1,9 @@
 @tailwind base;
 
+/**********************************************/
 /* add custom base styles and font-faces here */
+
+/*Utility classes*/
 
 .absolute-center {
     @apply absolute block;
@@ -9,15 +12,50 @@
     transform: translate(-50%, -50%);
 }
 
-.background-video {
-    @apply absolute object-cover object-center min-h-full min-w-full;
+.overlay-children {
+    display: grid;
+    grid-template-columns: 1fr;
 }
+.overlay-children > * {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+.cover {
+    @apply object-cover min-h-full min-w-full;
+}
+
+/*Object-specific classes*/
 
 .line-break {
     @apply mx-auto my-2;
     height: 8px;
     width: 80px;
 }
+
+.gradient-overlay{
+    background-image: linear-gradient(to top,rgba(30, 30, 30, 0.8),rgba(30, 30, 30, 0));
+}
+
+/*Magic number classes*/
+
+.max-h-600px {
+    max-height: 600px;
+}
+
+.max-h-480px {
+    max-height: 480px;
+}
+
+.max-w-720px {
+    max-height: 720px;
+}
+
+.h-200px {
+    height: 200px;
+}
+
+/*Custom fonts*/
 
 @font-face {
     font-family: Soleil;
@@ -31,8 +69,10 @@
 
 @tailwind components;
 
+/**********************************************/
 /* extract custom components here */
 
 @tailwind utilities;
 
+/**********************************************/
 /* add custom utilities here */

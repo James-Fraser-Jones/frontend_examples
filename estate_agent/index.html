@@ -9,12 +9,12 @@
     <title>Estate Agent</title>
 </head>
 
-<body class="font-soleil text-white">
-    <div class="relative">
-        <video autoplay muted loop playsinline class="background-video">
+<body class="font-soleil text-white bg-black">
+    <div class="overlay-children">
+        <video autoplay muted loop playsinline class="cover max-h-600px z-0">
             <source src="../content/forest.mp4" type="video/mp4">
         </video>
-        <section class="relative text-center"> <!-- main section -->
+        <section class="text-center z-10"> <!-- main section -->
             <nav class="px-4 pt-4 pb-6 flex justify-between align-center">
                 <div class="text-3xl">
                     <i class="fas fa-crow"></i> <!-- logo -->
@@ -59,45 +59,64 @@
 
     <section> <!-- mansions section -->
         <div> <!-- mansions -->
-            <a> <!-- mansion 1 -->
-                <img width="200" height="100" src="../content/beach.jpg"/>
-                <div>
-                    <p>James Fraser-Jones family heirloom mansion</p>
-                    <p>Spacious and sophisticated</p>
-                    <p>£1,999,998</p>
-                    <p>xpdejfi</p>
+            <a class="overlay-children"> <!-- mansion 1 -->
+                <img class="cover" src="../content/beach.jpg"/>
+                <div class="gradient-overlay mt-10 p-8 flex justify-between items-end">
+                    <div>
+                        <p class="text-teal-300"><b>Spacious and sophisticated</b></p>
+                        <p class="font-lemondlivre text-xl">Family Heirloom Mansion</p>
+                    </div>
+                    <div class="ml-4 text-right">
+                        <p class="text-lg"><b>£1,999,998</b></p>
+                        <p>xpdejfi</p>
+                    </div>
                 </div>
             </a>
-            <a> <!-- mansion 2 -->
-                <img width="200" height="100" src="../content/clouds.jpg"/>
-                <div>
-                    <p>Rusty old mansion in wales</p>
-                    <p>Intriguing and a bit smelly</p>
-                    <p>£1,200</p>
-                    <p>xoirturi</p>
+            <a class="overlay-children"> <!-- mansion 2 -->
+                <img class="cover" src="../content/clouds.jpg"/>
+                <div class="gradient-overlay mt-10 p-8 flex justify-between items-end">
+                    <div>
+                        <p class="text-blue-300"><b>Intriguing and deliberate</b></p>
+                        <p class="font-lemondlivre text-xl">Rusty old Mansion in Wales</p>
+                    </div>
+                    <div class="ml-4 text-right">
+                        <p class="text-lg"><b>£1,200</b></p>
+                        <p>xoirturi</p>
+                    </div>
                 </div>
             </a>
-            <a> <!-- mansion 3 -->
-                <img width="200" height="100" src="../content/flower.jpg"/>
-                <div>
-                    <p>Wonderous sky mansion with glass ceiling and floor</p>
-                    <p>Beautifully breaks laws of physics</p>
-                    <p>£1,776,998</p>
-                    <p>xfejifj</p>
+            <a class="overlay-children"> <!-- mansion 3 -->
+                <img class="cover" src="../content/flower.jpg"/>
+                <div class="gradient-overlay mt-10 p-8 flex justify-between items-end">
+                    <div>
+                        <p class="text-red-300"><b>Breaks laws of physics</b></p>
+                        <p class="font-lemondlivre text-xl">Wonderous Sky Mansion</p>
+                    </div>
+                    <div class="ml-4 text-right">
+                        <p class="text-lg"><b>£1,776,998</b></p>
+                        <p>xfejifj</p>
+                    </div>
                 </div>
             </a>
-            <a> <!-- mansion 4 -->
-                <img width="200" height="100" src="../content/trees.jpeg"/>
-                <div>
-                    <p>Hidey hole in the woods</p>
-                    <p>A great conversation piece</p>
-                    <p>-£320</p>
-                    <p>hmm...</p>
+            <a class="overlay-children"> <!-- mansion 4 -->
+                <img class="cover" src="../content/trees.jpeg"/>
+                <div class="gradient-overlay mt-10 p-8 flex justify-between items-end">
+                    <div>
+                        <p class="text-green-300"><b>A great conversation piece</b></p>
+                        <p class="font-lemondlivre text-xl">Hidey Hole in the Woods</p>
+                    </div>
+                    <div class="ml-4 text-right">
+                        <p class="text-lg"><b>-£320</b></p>
+                        <p>hmm...</p>
+                    </div>
                 </div>
             </a>
         </div>
-        <div> <!-- link button -->
-            <a>View all mansions</a>
+        <div class="flex justify-center bg-tbeige"> <!-- link button -->
+            <a class="bg-primary py-3 px-6 rounded mt-10">
+                <b>View</b> all <b>mansions</b>
+                <i class="fas fa-angle-right ml-2"></i>
+            </a>
         </div>
     </section>
 
