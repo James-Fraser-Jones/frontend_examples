@@ -10,9 +10,11 @@ module.exports = {
                      , 'serif'
                      ]
       }
+    , fontSize: {
+        'xxs': '.375rem'
+    }
     , colors: {
         primary: '#e00b2f'
-      , tbeige: '#eae8e3'
       }
     },
   },

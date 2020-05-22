@@ -45,11 +45,13 @@
                     <p>We warmly welcome you to our biannual celebration of the arctic landscape!</p>
                 </div>
                 <div class="flex flex-wrap justify-center mt-6"> <!-- link button group -->
-                    <a class="mx-2 mb-2 bg-primary py-3 px-6 rounded">
+                    <a class="mx-2 mb-2 bg-primary py-3 px-6 rounded cursor-pointer shadow-lg 
+                     transform hover:-translate-y-1 hover:shadow-2xl duration-300 ease-out transition">
                         <b>View</b> all <b>mansions</b>
                         <i class="fas fa-angle-right ml-2"></i>
                     </a>
-                    <a class="mx-2 mb-2 py-3 px-6 rounded-full border-2 border-solid border-white">
+                    <a class="mx-2 mb-2 py-3 px-6 rounded-full border-2 border-solid border-white 
+                    hover:text-black hover:bg-white transition-colors duration-300 ease-out cursor-pointer">
                         <b>Explore</b> the <b>arctic</b>
                     </a>
                 </div>
@@ -61,7 +63,7 @@
         <div> <!-- mansions -->
             <a class="overlay-children"> <!-- mansion 1 -->
                 <img class="cover" src="../content/beach.jpg"/>
-                <div class="gradient-overlay mt-10 p-8 flex justify-between items-end">
+                <div class="gradient-overlay mt-10 p-6 flex justify-between items-end">
                     <div>
                         <p class="text-teal-300"><b>Spacious and sophisticated</b></p>
                         <p class="font-lemondlivre text-xl">Family Heirloom Mansion</p>
@@ -74,7 +76,7 @@
             </a>
             <a class="overlay-children"> <!-- mansion 2 -->
                 <img class="cover" src="../content/clouds.jpg"/>
-                <div class="gradient-overlay mt-10 p-8 flex justify-between items-end">
+                <div class="gradient-overlay mt-10 p-6 flex justify-between items-end">
                     <div>
                         <p class="text-blue-300"><b>Intriguing and deliberate</b></p>
                         <p class="font-lemondlivre text-xl">Rusty old Mansion in Wales</p>
@@ -87,7 +89,7 @@
             </a>
             <a class="overlay-children"> <!-- mansion 3 -->
                 <img class="cover" src="../content/flower.jpg"/>
-                <div class="gradient-overlay mt-10 p-8 flex justify-between items-end">
+                <div class="gradient-overlay mt-10 p-6 flex justify-between items-end">
                     <div>
                         <p class="text-red-300"><b>Breaks laws of physics</b></p>
                         <p class="font-lemondlivre text-xl">Wonderous Sky Mansion</p>
@@ -100,7 +102,7 @@
             </a>
             <a class="overlay-children"> <!-- mansion 4 -->
                 <img class="cover" src="../content/trees.jpeg"/>
-                <div class="gradient-overlay mt-10 p-8 flex justify-between items-end">
+                <div class="gradient-overlay mt-10 p-6 flex justify-between items-end">
                     <div>
                         <p class="text-green-300"><b>A great conversation piece</b></p>
                         <p class="font-lemondlivre text-xl">Hidey Hole in the Woods</p>
@@ -112,69 +114,189 @@
                 </div>
             </a>
         </div>
-        <div class="flex justify-center bg-tbeige"> <!-- link button -->
-            <a class="bg-primary py-3 px-6 rounded mt-10">
+        <div class="flex justify-center bg-gray-200"> <!-- link button -->
+            <a class="mx-2 mb-2 bg-primary py-3 px-6 rounded cursor-pointer shadow-lg 
+            transform hover:-translate-y-1 duration-300 ease-out transition hover:shadow-2xl mt-8">
                 <b>View</b> all <b>mansions</b>
                 <i class="fas fa-angle-right ml-2"></i>
             </a>
         </div>
     </section>
 
-    <section> <!-- discover section -->
+    <section class="pt-10 bg-gray-200"> <!-- discover section -->
         <div></div> <!-- google map -->
-        <div> <!-- bullet list -->
+        <div class="bg-black p-6"> <!-- bullet list -->
             <header>
-                <p>Explore</p>
-                <p>Birmingham</p>
+                <p class="text-primary text-xl">Explore</p>
+                <p class="font-lemondlivre text-3xl">Birmingham</p>
                 <div> <!-- line seperator -->
                     <img src="../content/LineBreak.svg" width="80" height="8"> 
                 </div> 
             </header>
-            <ul>
-                <li>
-                    <p>Kings Heath</p>
-                    <ul>
-                        <li>As you consider all the possible ways</li>
-                        <li>to improve yourself and the world</li>
-                        <li>you notice John Travolta</li>
-                        <li>seems fairly unhappy</li>
+            <ul class="mt-8">
+                <li class="mb-4">
+                    <div class="relative">
+                        <div class="absolute text-primary text-xxs absolute-center-y bullet">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <p><b>Kings Heath</b></p>
+                    </div>
+                    <ul class="opacity-50 text-sm flex flex-wrap">
+                        <li class="mr-2">
+                            <p>As you consider</p> 
+                        </li>
+                        <li class="mr-2">
+                            <p>all the possible ways</p> 
+                        </li>
+                        <li class="mr-2">
+                            <p>to improve yourself</p> 
+                        </li>
+                        <li class="mr-2">
+                            <p>and the world</p> 
+                        </li>
+                        <li class="mr-2">
+                            <p>you notice John Travolta</p> 
+                        </li>
+                        <li class="mr-2">
+                            <p>seems fairly unhappy</p> 
+                        </li>
                     </ul>
                 </li>
-                <li>
-                    <p>Moseley</p>
-                    <ul>
-                        <li>I ate a sock</li>
-                        <li>because people on the Internet</li>
-                        <li>told me to</li>
+                <li class="mb-4">
+                    <div class="relative">
+                        <div class="absolute text-yellow-400 text-xxs absolute-center-y bullet">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <p><b>Moseley</b></p>
+                    </div>
+                    <ul class="opacity-50 text-sm flex flex-wrap">
+                        <li class="mr-2">
+                            <p>I ate a sock</p> 
+                        </li>
+                        <li class="mr-2">
+                            <p>because people</p> 
+                        </li>
+                        <li class="mr-2">
+                            <p>on the Internet</p> 
+                        </li>
+                        <li class="mr-2">
+                            <p>told me to</p> 
+                        </li>
                     </ul>
                 </li>
-                <li>
-                    <p>Stirchley</p>
-                    <ul>
-                        <li>Some bathing suits</li>
-                        <li>just shouldn’t be worn by some people</li>
-                        <li>It was always dangerous to drive with him</li>
-                        <li>since he insisted the safety cones</li>
-                        <li>were a slalom course</li>
+                <li class="mb-4">
+                    <div class="relative">
+                        <div class="absolute text-blue-400 text-xxs absolute-center-y bullet">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <p><b>Stirchley</b></p>
+                    </div>
+                    <ul class="opacity-50 text-sm flex flex-wrap">
+                        <li class="mr-2">
+                            <p>Some bathing suits</p> 
+                        </li>
+                        <li class="mr-2">
+                            <p>just shouldn’t be worn</p> 
+                        </li>
+                        <li class="mr-2">
+                            <p>by some people</p> 
+                        </li>
+                        <li class="mr-2">
+                            <p>It was always dangerous</p> 
+                        </li>
+                        <li class="mr-2">
+                            <p>to drive with him</p> 
+                        </li>
+                        <li class="mr-2">
+                            <p>since he insisted</p> 
+                        </li>
+                        <li class="mr-2">
+                            <p>the safety cones</p> 
+                        </li>
+                        <li class="mr-2">
+                            <p>were a slalom course</p> 
+                        </li>
                     </ul>
                 </li>
-                <li>
-                    <p>Kings Norton</p>
-                    <ul>
-                        <li>Your girlfriend bought your favorite cookie crisp cereal</li>
-                        <li>but forgot to get milk.</li>
+                <li class="mb-4">
+                    <div class="relative">
+                        <div class="absolute text-green-400 text-xxs absolute-center-y bullet">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <p><b>Kings Norton</b></p>
+                    </div>
+                    <ul class="opacity-50 text-sm flex flex-wrap">
+                        <li class="mr-2">
+                            <p>Your girlfriend bought</p> 
+                        </li>
+                        <li class="mr-2">
+                            <p>your favorite cookie</p> 
+                        </li>
+                        <li class="mr-2">
+                            <p>crisp cereal</p> 
+                        </li>
+                        <li class="mr-2">
+                            <p>but forgot</p> 
+                        </li>
+                        <li class="mr-2">
+                            <p>to get milk</p> 
+                        </li>
                     </ul>
                 </li>
             </ul>
         </div> 
     </section>
 
-    <section> <!-- collaborate section -->
-
+    <section class="overlay-children"> <!-- collaborate section -->
+        <div class="z-0">
+            <img class="cover" src="../content/clouds.jpg"/>
+        </div>
+        <div class="w-full h-full bg-black opacity-50 z-10"></div>
+        <div class="p-8 z-20">
+            <div class="bg-gray-200 rounded-md text-black p-6">
+                <div class="font-lemondlivre text-3xl text-center">
+                    <p><b>Work for us</b></p>
+                </div>
+                <div class="line-break"> <!-- line seperator -->
+                    <img src="../content/LineBreak.svg" width="80" height="8"> 
+                </div>
+                <div class="text-center mt-4">
+                    <p>Help to protect the arctic ice from poaching</p>
+                </div>
+                <div class="flex justify-center mt-4">
+                    <a class="mx-2 mb-2 bg-primary py-3 px-6 rounded cursor-pointer shadow-lg 
+                    transform hover:-translate-y-1 hover:shadow-2xl duration-300 ease-out transition text-white">
+                        <b>Contact</b> us
+                        <i class="fas fa-angle-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
     
-    <footer> <!-- footer -->
-        <div>Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed by CC BY 3.0</div>
+    <footer class="px-6 pt-10 pb-40"> <!-- footer -->
+        <div class="flex justify-center text-5xl">
+            <i class="fas fa-crow"></i> <!-- logo -->
+        </div>
+        <div class="flex flex-col items-center mt-8">
+            <div class="opacity-50 text-sm">
+                <p>Email</p>
+            </div>
+            <div class="mt-2 bg-primary bg-opacity-25 hover:bg-opacity-50 p-2 border-2 rounded 
+            border-primary transform transition hover:-translate-y-1 duration-300 ease-out contact-shadow">
+                <p>james@fraser-jones.co.uk</p>
+            </div>
+        </div>
+        <div class="flex flex-col items-center mt-8">
+            <div class="opacity-50 text-sm">
+                <p>Phone</p>
+            </div>
+            <div class="mt-2 bg-primary bg-opacity-25 hover:bg-opacity-50 p-2 border-2 rounded 
+            border-primary transform transition hover:-translate-y-1 duration-300 ease-out contact-shadow">
+                <p>07940350499</p>
+            </div>
+        </div>
+        <div class="hidden">Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed by CC BY 3.0</div>
     </footer>
 
     <script src="index.js"></script>
